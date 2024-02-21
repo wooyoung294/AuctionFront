@@ -1,6 +1,6 @@
 import React, {useRef, useState} from 'react';
 import logoImage from '../assets/img/LoginLogo.png';
-import JoinModal from "./JoinModal";
+import JoinModal from "../Modals/JoinModal";
 import {useNavigate} from "react-router-dom";
 import axios from "../Config/AxiosConfig";
 
