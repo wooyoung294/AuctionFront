@@ -197,40 +197,7 @@ function AuctionDetail() {
                                             className={'liNoDot'}>{chatListItem.writerId} : {chatListItem.chat}</li>
                                 )
                             }
-                            <li className={'liNoDot'}>9 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot'}>1 : A</li>
-                            <li className={'liNoDot liActive'}>5 : A</li>
-
                         </ul>
-
                     </div>
                     {
                         timeLeft === "-1" ?
