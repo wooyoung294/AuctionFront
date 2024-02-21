@@ -6,6 +6,7 @@ import {useLocation} from 'react-router-dom'
 import SellModal from "../Modals/SellModal";
 import axios from "../Config/AxiosConfig";
 import {IsSessionExist} from "../Function/IsSessionExist";
+import ChargeModal from "../Modals/ChargeModal";
 
 function AuctionList() {
 
@@ -61,6 +62,7 @@ function AuctionList() {
             </div>
             <SideMenu handleShow={handleShow}/>
             <SellModal show={sell} handleClose={handleClose} seller={name}/>
+            <ChargeModal show={charge} handleClose={handleClose}/>
         </>
     );
 };

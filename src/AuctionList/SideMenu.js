@@ -11,7 +11,7 @@ function SideMenu({handleShow}) {
     return (
         <section className="rightnav">
             <ul>
-                <li className="charge" name={'charge'} onClick={handleShow}>
+                <li className="charge" name={'charge'} onClick={()=>handleShow('charge')}>
                     <img src={coin} alt="ico" name={'charge'}/>
                     <div className="label" name={'charge'}>
                         <span className="title" name={'charge'}>충전</span>
