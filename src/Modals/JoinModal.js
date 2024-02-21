@@ -87,7 +87,7 @@ function JoinModal({show, handleClose}) {
                 </Modal.Header>
                 <Modal.Body>
                     <div className={'LoginItemWrapper'}>
-                        <InputGroup className="mb-3 mr-80W-inherit">
+                        <InputGroup className="mb-3 mr-80W-93">
                             <Form.Control
                                 className={'AuctionInput mr-0'}
                                 name={'id'}
