@@ -12,27 +12,19 @@ function SideMenu({handleShow}) {
         <section className="rightnav">
             <ul>
                 <li className="charge" name={'charge'} onClick={()=>handleShow('charge')}>
-                    <img src={coin} alt="ico" name={'charge'}/>
-                    <div className="label" name={'charge'}>
-                        <span className="title" name={'charge'}>충전</span>
+                    <img src={coin} alt="ico"/>
+                    <div className="label">
+                        <span className="title">충전</span>
                         <br name={'charge'}/>
-                        <span className="subtitle" name={'charge'}>CHARGE</span>
+                        <span className="subtitle">CHARGE</span>
                     </div>
                 </li>
                 <li className="sell" onClick={()=>handleShow('sell')}>
-                    <img src={shoes}  alt="ico" onClick={()=>handleShow('sell')}/>
-                    <div className="label" onClick={()=>handleShow('sell')}>
-                        <span className="title" onClick={()=>handleShow('sell')}>판매</span>
-                        <br onClick={()=>handleShow('sell')}/>
-                        <span className="subtitle" onClick={()=>handleShow('sell')}>SELL</span>
-                    </div>
-                </li>
-                <li className="refund" name={'exchange'} onClick={handleShow}>
-                    <img src={refund} alt="ico"/>
+                    <img src={shoes}  alt="ico"/>
                     <div className="label">
-                        <span className="title">환전</span>
+                        <span className="title">판매</span>
                         <br/>
-                        <span className="subtitle">EXCHANGE</span>
+                        <span className="subtitle">SELL</span>
                     </div>
                 </li>
                 <li className="quit" name={'quit'} onClick={logOut}>
