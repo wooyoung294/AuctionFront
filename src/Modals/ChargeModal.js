@@ -6,14 +6,28 @@ import Button from "react-bootstrap/Button";
 import axios from "../Config/AxiosConfig";
 
 function ChargeModal({show, handleClose}) {
-    const [inputValue, setInputValue] = useState();
-    const onChangedInput = (e)=>{
+    const [inputValue, setInputValue] = useState('');
+    const onChangedInput = (e) => {
         setInputValue(e.target.value);
     }
+
     async function chargeMoney() {
-        const {id} = JSON.parse(sessionStorage.getItem('profile'));
-        await axios.get(`/chargeMoney?id=${id}&money=${inputValue}`)
+        const regex = /^[0-9]+$/;
+        const regex2 = /^(0|[1-9][0-9]{0,5}|1000000)$/;
+        if (regex.test(inputValue)) {
+            if (regex2.test(inputValue)) {
+                const {id} = JSON.parse(sessionStorage.getItem('profile'));
+                await axios.get(`/chargeMoney?id=${id}&money=${inputValue}`)
+                        .then(({data}) => data === 1 && handleClose('charge'))
+                        .catch(e => console.log(e));
+            } else {
+                alert('1회에 1,000,000원까지 입력됩니다.')
+            }
+        } else {
+            alert('숫자만 입력하셔야 됩니다.')
+        }
     }
+
     return (
         <Modal show={show} backdrop="static" onHide={() => handleClose('charge')} animation={false}>
             <Modal.Header closeButton
@@ -25,9 +39,9 @@ function ChargeModal({show, handleClose}) {
                 <InputGroup className="mb-3 mr-80W-inherit">
                     <Form.Control
                         name={'amount'}
-                        placeholder="경매 시작 가격"
+                        placeholder="충전할 금액을 입력하세요."
                         className={'AuctionInput mr-0'}
-                        type={'number'}
+                        type={'text'}
                         value={inputValue}
                         onChange={onChangedInput}
                     />
