@@ -11,7 +11,7 @@ import {TimePicker} from "@mui/x-date-pickers/TimePicker";
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import dayjs from "dayjs";
 import {LocalizationProvider} from "@mui/x-date-pickers/LocalizationProvider";
-function SellModal({show, handleClose, seller}) {
+function SellModal({show, handleClose}) {
     const [previewImgs, setPreviewImg] = useState([]);
     const [toastShow, setToastShow] = useState(false);
     const [inputValue, setInputValue] = useState({contentName: null, amount: 0});
@@ -45,7 +45,7 @@ function SellModal({show, handleClose, seller}) {
             const data = new FormData();
             data.append('contentName', contentName);
             data.append('amount', amount);
-            data.append('seller', seller);
+            data.append('seller', JSON.parse(sessionStorage.getItem('profile')).name);
             data.append('startTime', dayjs(date).format('YYYY-MM-DD')+' '+dayjs(time).format('hh:mm:ss'));
             for (let i = 0; i < selectedFiles.length; i++) {
                 data.append('files', selectedFiles[i]);
