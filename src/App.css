@@ -513,3 +513,6 @@ body{
   border-radius: unset;
 }
 
+.MuiTablePagination-selectLabel,.MuiTablePagination-displayedRows {
+  margin-bottom: unset !important;
+}
