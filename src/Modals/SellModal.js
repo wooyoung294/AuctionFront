@@ -69,7 +69,6 @@ function SellModal({show, handleClose, seller}) {
     }
 
     const onChangedInput = (e) => {
-        console.log(e.target);
         const {name, value} = e.target;
         setInputValue((prevValue) => ({...prevValue, [name]: value}))
     }

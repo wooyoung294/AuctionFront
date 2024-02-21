@@ -24,12 +24,11 @@ function AuctionList() {
         getUserAmount()
             .then(({data})=> {
                 setProfile((prevValue)=>({...prevValue,amount:data}))
-                console.log(data)
             })
             .catch(e=>{
                 throw new Error(e);
             })
-    },[])
+    },[charge])
 
     const handleClose = (key) => {
         setShow((prevValue)=>({
@@ -57,7 +56,7 @@ function AuctionList() {
                     </div>
                 </div>
                 <div className={'ListTableWrapper'}>
-                    <AuctionListTable/>
+                    <AuctionListTable sell={sell}/>
                 </div>
             </div>
             <SideMenu handleShow={handleShow}/>

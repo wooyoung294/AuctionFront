@@ -22,6 +22,7 @@ function AuctionDetail() {
     const unblock = () => {
         const unblock = window.confirm('경매를 떠나실껀가요?');
         if (unblock) {
+            client.current.deactivate();
             navigate('/list');
         }
     }
@@ -39,14 +40,13 @@ function AuctionDetail() {
             const json_body = JSON.parse(body.body);
             const {writerId, chat} = json_body
             if (writerId === "timer") {
-                console.log('json_body Timer', json_body);
+
                 if (chat === 'close') {
-                    // disconnect();
+                    disconnect();
                 } else {
                     setTimeLeft(chat);
                 }
             } else if (writerId === "SYSTEM") {
-                console.log('json_body System', json_body);
             } else {
                 setChatList((_chat_list) => [
                     ..._chat_list, {writerId, chat}
