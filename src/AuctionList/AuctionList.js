@@ -10,8 +10,8 @@ import ChargeModal from "../Modals/ChargeModal";
 
 function AuctionList() {
 
-    const [profile, setProfile] = useState({amount:0,name:''})
-    const {amount,name} = profile;
+    const [profile, setProfile] = useState({amount:0})
+    const {amount} = profile;
     const [show, setShow] = useState({sell: false, charge: false});
     const {sell, charge} = show;
 
@@ -60,7 +60,7 @@ function AuctionList() {
                 </div>
             </div>
             <SideMenu handleShow={handleShow}/>
-            <SellModal show={sell} handleClose={handleClose} seller={name}/>
+            <SellModal show={sell} handleClose={handleClose}/>
             <ChargeModal show={charge} handleClose={handleClose}/>
         </>
     );
