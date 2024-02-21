@@ -123,12 +123,19 @@ body{
 .mr-0{
   margin-right: 0;
 }
-.mr-80W-inherit{
+.mr-80W-93{
   margin-right: 80px;
+  width: 93%;
+  margin-left: 20px;
+  margin-bottom: 0px !important;
+}
+.mr-80W-inherit {
+  margin-right: 52px;
   width: inherit;
 }
 .AuctionInputSubLabel{
   border: none;
+  border-right: none;
   background: white;
   height: 20%;
   margin-top: 7px;
@@ -502,5 +509,7 @@ body{
   border-radius: 5px;
   font-weight: bold;
 }
-
+.AuctionInput{
+  border-radius: unset;
+}
 

@@ -91,7 +91,7 @@ function SellModal({show, handleClose, seller}) {
         setPreviewImg(imageUrlLists);
     }
     return (
-        <Modal show={show} onHide={() => handleClose('sell')} animation={false}>
+        <Modal show={show} backdrop="static" onHide={() => handleClose('sell')} animation={false}>
             <Modal.Header closeButton
                           style={{display: 'flex', alignItems: 'end', background: '#fa6394', color: 'white'}}>
                 <h4 style={{margin: '0'}}>판매하기</h4>
