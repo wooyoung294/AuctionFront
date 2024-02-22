@@ -49,13 +49,13 @@ function AuctionListTable({sell}) {
         }
     }, [sell])
     return (
-        <div style={{height: '98%', width: '100%'}}>
+        <div style={{height: 'calc(95% - 10px)', width: '100%'}}>
             <DataGrid
                 rows={rows}
                 columns={columns}
                 initialState={{
                     pagination: {
-                        paginationModel: {page: 0, pageSize: 5},
+                        paginationModel: {page: 0, pageSize: 11},
                     },
                 }}
                 sortingOrder={[]}

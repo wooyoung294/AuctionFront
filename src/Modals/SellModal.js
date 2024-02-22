@@ -113,7 +113,7 @@ function SellModal({show, handleClose}) {
                     </LocalizationProvider>
                     <LocalizationProvider dateAdapter={AdapterDayjs} >
                         <TimePicker
-                            minutesStep={10}
+                            minutesStep={5}
                             ampm={false}
                             value={time}
                             onChange={handleTimeChange}

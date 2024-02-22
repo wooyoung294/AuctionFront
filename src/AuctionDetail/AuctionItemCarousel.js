@@ -9,7 +9,7 @@ function AuctionItemCarousel({imagePaths}) {
                     <Carousel.Item key={index}>
                         <img src={`data:image/jpeg;base64,${value}`}
                              text={`${index}slide`}
-                             style={{objectFit: 'cover', width: '100%', height: '100%'}}/>
+                             style={{objectFit: 'fill', width: '100%', height: '100%'}}/>
                     </Carousel.Item>
                     :
                     null
