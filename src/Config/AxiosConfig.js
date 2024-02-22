@@ -3,7 +3,7 @@ import {useNavigate} from "react-router-dom";
 
 
 const axiosInstance = axios.create({
-    baseURL: 'http://localhost:8080/api', // API의 기본 URL
+    baseURL: process.env.REACT_APP_AUCTION_API_URL, // API의 기본 URL
     timeout: 5000
 })
 axiosInstance.interceptors.request.use(
@@ -25,7 +25,7 @@ axiosInstance.interceptors.request.use(
 
 async function silentTokenUpdate() {
     const {id, token} = JSON.parse(sessionStorage.getItem('profile'));
-    const {data} = await axios.post('http://localhost:8080/api/tokenUpdate',
+    const {data} = await axios.post(process.env.REACT_APP_AUCTION_API_URL+'/tokenUpdate',
         {id, token},
         {
             headers: {'Content-Type': 'application/json'}
@@ -39,7 +39,11 @@ async function silentTokenUpdate() {
 
 axiosInstance.interceptors.response.use(
     response => {
-        if (response.config.url !== '/login' && !response.config.url.includes('/userAmount?id=')) {
+        if (response.config.url !== '/login'
+            && response.config.url !== '/createUser'
+            && !response.config.url.includes('/userAmount?id=')
+            && !response.config.url.includes('/duplicateId')
+        ) {
             silentTokenUpdate();
         }
         return response;

@@ -65,7 +65,8 @@ function AuctionDetail() {
     }, [no, setTimeLeft, disconnect, setChatList, setItemObj]);
     const connect = useCallback(() => {
         client.current = new Client({
-            brokerURL: 'ws://localhost:8080/ws',
+            // brokerURL: 'ws://localhost:8080/ws',
+            brokerURL: 'ws://34.64.81.139:8080/ws',
             onConnect: () => {
                 subscribe();
                 // client.current.subscribe('/user/queue/welcome/' + no, (body) => {
