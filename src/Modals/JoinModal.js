@@ -30,7 +30,7 @@ function JoinModal({show, handleClose}) {
             alert('아이디가 공백입니다.');
             return;
         }
-        const res = await axios.get('/api/duplicateId?id='+id)
+        const res = await axios.get('/duplicateId?id='+id)
         if(res.data>0){
             alert('중복된 아이디가 있습니다.')
         }
@@ -60,7 +60,7 @@ function JoinModal({show, handleClose}) {
             alert('아이디 중복체크를 해주세요.');
             return;
         }
-         const res = await axios.post('/api/createUser',
+         const res = await axios.post('/createUser',
             {id, password, name},
             {
                 headers: {'Content-Type': 'application/json'},
@@ -68,6 +68,7 @@ function JoinModal({show, handleClose}) {
         )
         if(res.data === 1){
             alert('가입을 축하드립니다!');
+            handleClose();
         }
         else{
             alert('가입에 실패하셨습니다!');
