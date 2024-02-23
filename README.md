@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# AUCTION
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br/>
 
-## Available Scripts
+![auction](https://github.com/wooyoung294/AuctionFront/assets/160103260/55ef9249-f3d7-4ca4-8334-7b84be20f347)
 
-In the project directory, you can run:
 
-### `npm start`
++ 배포 주소 : wooyu.world
++ 개발 기간 : 2024-02-17 ~ 2024-02-23
++ 개발 이유 : WebSocket을 사용해 보고 싶었는데 채팅보다는 경매가 더 재밌지 않을까 해서...
+<br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Requirement
++ NODE : v20.11.0
++ NPM  : 10.2.4
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## STACK
 
-### `npm run build`
+### Environment
+![intellijidea](https://img.shields.io/badge/intellijidea-000000?style=for-the-badge&logo=intellijidea)
+<img src="https://camo.githubusercontent.com/8d433710b84192cd318b602aadcf296eed6c443fea42c2f06fba2ce65a49a412/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769742d4630353033323f7374796c653d666f722d7468652d6261646765266c6f676f3d476974266c6f676f436f6c6f723d7768697465" alt="Git" data-canonical-src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&amp;logo=Git&amp;logoColor=white" style="max-width: 100%;">  <img src="https://camo.githubusercontent.com/dc4e9f7ea9597ea5a27629a36afb9ef8697569c621ccb42369070012b4092ae1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d3138313731373f7374796c653d666f722d7468652d6261646765266c6f676f3d476974487562266c6f676f436f6c6f723d7768697465" alt="Github" data-canonical-src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&amp;logo=GitHub&amp;logoColor=white" style="max-width: 100%;">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Config
+<img src="https://camo.githubusercontent.com/03a1992c246dcbdbaa772714e7c4d0fa4bb3b0de8a6a157405d17f8f8bd7cdf0/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6e706d2d4342333833373f7374796c653d666f722d7468652d6261646765266c6f676f3d6e706d266c6f676f436f6c6f723d7768697465" alt="npm" data-canonical-src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&amp;logo=npm&amp;logoColor=white" style="max-width: 100%;">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Devleopment
+![Javascript](https://img.shields.io/badge/javascript-444444?style=for-the-badge&logo=javascript)
+![React](https://img.shields.io/badge/react-444444?style=for-the-badge&logo=react)
+![Bootstrap](https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Material UI](https://img.shields.io/badge/MaterialUI-007FFF?style=for-the-badge&logo=mui&logoColor=white)
+![WEBSOCKET](https://img.shields.io/badge/WEBSOCKET-orange?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTAwIiBoZWlnaHQ9IjE4ODUiIHZpZXdCb3g9IjAgMCAyNTYgMTkzIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCI+PHBhdGggZD0iTTE5Mi40NCAxNDQuNjQ1aDMxLjc4VjY4LjMzOWwtMzUuODA1LTM1LjgwNC0yMi40NzIgMjIuNDcyIDI2LjQ5NyAyNi40OTd2NjMuMTR6bTMxLjg2NCAxNS45MzFIMTEzLjQ1Mkw4Ni45NTQgMTM0LjA4bDExLjIzNy0xMS4yMzYgMjEuODg1IDIxLjg4NWg0NS4wMjhsLTQ0LjM1Ny00NC40NDEgMTEuMzItMTEuMzIgNDQuMzU3IDQ0LjM1OFY4OC4yOTZsLTIxLjgwMS0yMS44MDEgMTEuMTUyLTExLjE1M0wxMTAuNjg1IDBIMGwzMS42OTYgMzEuNjk2di4wODRIOTcuNDM2bDIzLjIyNyAyMy4yMjctMzMuOTYgMzMuOTZMNjMuNDc2IDY1Ljc0VjQ3LjcxMmgtMzEuNzh2MzEuMTkzbDU1LjAwNyA1NS4wMDdMNjQuMzE0IDE1Ni4zbDM1LjgwNSAzNS44MDVIMjU2bC0zMS42OTYtMzEuNTI5eiIgZmlsbD0iIzIzMUYyMCIvPjwvc3ZnPg==&logocolor=black)
 
-### `npm run eject`
+<br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 화면구성
+|LOGIN|MAIN|AUCTION|
+|------|---|---|
+|![login](https://github.com/wooyoung294/AuctionFront/assets/160103260/3ca4af3a-4680-4636-b9e2-f598de30e767)|![메인](https://github.com/wooyoung294/AuctionFront/assets/160103260/03f497c0-01b6-4199-a326-51fe68cbfe17)|![상세](https://github.com/wooyoung294/AuctionFront/assets/160103260/070f6d1a-c634-42d2-bf2f-1da871fd4e8f)|
