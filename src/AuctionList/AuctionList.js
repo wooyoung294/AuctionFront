@@ -7,6 +7,7 @@ import SellModal from "../Modals/SellModal";
 import axios from "../Config/AxiosConfig";
 import {IsSessionExist} from "../Function/IsSessionExist";
 import ChargeModal from "../Modals/ChargeModal";
+import Tutorial from "./Tutorial";
 
 function AuctionList() {
 
@@ -14,7 +15,7 @@ function AuctionList() {
     const {amount} = profile;
     const [show, setShow] = useState({sell: false, charge: false});
     const {sell, charge} = show;
-
+    const [run,setRun] = useState(false);
     async function getUserAmount (){
         const {id} = JSON.parse(sessionStorage.getItem('profile'));
         return  await axios.get(`/userAmount?id=${id}`)
@@ -23,7 +24,8 @@ function AuctionList() {
         IsSessionExist();
         getUserAmount()
             .then(({data})=> {
-                setProfile((prevValue)=>({...prevValue,amount:data}))
+                setProfile((prevValue)=>({...prevValue,amount:data}));
+                setRun(!Boolean(Number(JSON.parse(sessionStorage.getItem('profile')).tutorial)))
             })
             .catch(e=>{
                 throw new Error(e);
@@ -45,6 +47,7 @@ function AuctionList() {
     };
     return (
         <>
+            <Tutorial run={run}/>
             <div style={{padding: '40px', height: '100%'}}>
                 <div className={'ListTitleWrapper'}>
                     <div className={'titlePaint'}>Auction List</div>
