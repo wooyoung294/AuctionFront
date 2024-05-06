@@ -1,10 +1,9 @@
 import axios from 'axios';
-import {useNavigate} from "react-router-dom";
 
 
 const axiosInstance = axios.create({
     baseURL: process.env.REACT_APP_AUCTION_API_URL, // API의 기본 URL
-    timeout: 5000
+    timeout: 10000
 })
 axiosInstance.interceptors.request.use(
     config => {
